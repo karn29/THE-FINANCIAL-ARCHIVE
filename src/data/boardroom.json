@@ -4,6 +4,28 @@
     "company": "Netflix",
     "year": 2007,
     "industryContext": "Internet speeds are increasing globally. Digital streaming technology is emerging as a viable alternative to physical media. DVD rental by mail is currently the primary revenue source, but distribution costs are rising.",
+    "agenda": [
+      "Evaluate the threat of digital streaming to our DVD business.",
+      "Determine capital allocation for streaming infrastructure.",
+      "Assess content licensing vs. original production strategy."
+    ],
+    "characters": [
+      {
+        "name": "Reed Hastings",
+        "role": "CEO",
+        "quote": "If we don't cannibalize our own DVD business, someone else will."
+      },
+      {
+        "name": "Barry McCarthy",
+        "role": "CFO",
+        "quote": "Streaming margins are terrible right now. We need to protect cash flow."
+      },
+      {
+        "name": "Ted Sarandos",
+        "role": "Chief Content Officer",
+        "quote": "The studios will eventually squeeze us on licensing. We need our own IP."
+      }
+    ],
     "financialSituation": {
       "revenue": "$1.2B",
       "subscribers": "6.3 Million",
@@ -158,6 +180,28 @@
     "company": "Apple",
     "year": 2005,
     "industryContext": "The iPod is a massive success, but mobile phones are starting to include basic MP3 players. Motorola and Nokia dominate the handset market.",
+    "agenda": [
+      "Address the threat of MP3-enabled mobile phones to the iPod.",
+      "Decide on the user interface paradigm for a potential Apple phone.",
+      "Determine carrier partnership strategy."
+    ],
+    "characters": [
+      {
+        "name": "Steve Jobs",
+        "role": "CEO",
+        "quote": "The problem with phones is they all have these plastic little keyboards that are there whether you need them or not."
+      },
+      {
+        "name": "Tony Fadell",
+        "role": "SVP, iPod Division",
+        "quote": "We should just put a phone in an iPod. The click-wheel is iconic."
+      },
+      {
+        "name": "Scott Forstall",
+        "role": "SVP, iOS Software",
+        "quote": "Multi-touch is the future. We can build a full OS on a screen."
+      }
+    ],
     "financialSituation": {
       "revenue": "$13.9B",
       "cashOnHand": "$8.2B",
@@ -232,6 +276,28 @@
     "company": "Blockbuster",
     "year": 2000,
     "industryContext": "Blockbuster is the king of video rentals with 9,000 stores. A small startup called Netflix has offered to sell itself to us for $50 million.",
+    "agenda": [
+      "Review the $50M acquisition offer from Netflix.",
+      "Discuss the threat of DVD-by-mail services.",
+      "Evaluate our reliance on late fee revenue."
+    ],
+    "characters": [
+      {
+        "name": "John Antioco",
+        "role": "CEO",
+        "quote": "They are a niche business. People want the experience of walking into a store on a Friday night."
+      },
+      {
+        "name": "Ed Stead",
+        "role": "General Counsel",
+        "quote": "We make $800 million a year on late fees. Their 'no late fee' model is fundamentally unprofitable."
+      },
+      {
+        "name": "Jim Keyes",
+        "role": "Future CEO",
+        "quote": "We are a retail company, not a technology company. We should focus on selling candy and popcorn."
+      }
+    ],
     "financialSituation": {
       "revenue": "$4.9B",
       "stores": "9,000+",
@@ -306,6 +372,28 @@
     "company": "Tesla",
     "year": 2017,
     "industryContext": "The Model S and X are luxury hits, but to survive, Tesla needs a mass-market car: The Model 3. We are entering 'Production Hell'.",
+    "agenda": [
+      "Address the critical bottlenecks in Model 3 production.",
+      "Evaluate the 'Alien Dreadnought' automation strategy.",
+      "Manage cash burn and secure short-term financing."
+    ],
+    "characters": [
+      {
+        "name": "Elon Musk",
+        "role": "CEO",
+        "quote": "We need to build the machine that builds the machine. Automation is the only way to scale."
+      },
+      {
+        "name": "JB Straubel",
+        "role": "CTO",
+        "quote": "The robots are too complex. We are trying to automate tasks humans do much better."
+      },
+      {
+        "name": "Deepak Ahuja",
+        "role": "CFO",
+        "quote": "We are burning cash at an unsustainable rate. If we don't hit 5,000 cars a week soon, we will run out of money."
+      }
+    ],
     "financialSituation": {
       "cashBurn": "$1B/quarter",
       "stockPrice": "$20 (split-adj)",
@@ -380,6 +468,28 @@
     "company": "Amazon",
     "year": 2003,
     "industryContext": "Amazon is an e-commerce giant, but our internal infrastructure is a mess. We've built a set of internal tools to handle our own scale.",
+    "agenda": [
+      "Evaluate the proposal to externalize our internal computing infrastructure.",
+      "Assess the risks of entering the B2B enterprise software market.",
+      "Determine pricing strategy for utility computing."
+    ],
+    "characters": [
+      {
+        "name": "Jeff Bezos",
+        "role": "CEO",
+        "quote": "If we can build this for ourselves, we can build it for everyone. It's a utility, like electricity."
+      },
+      {
+        "name": "Andy Jassy",
+        "role": "Head of AWS",
+        "quote": "Developers are spending 70% of their time on infrastructure. We can solve that."
+      },
+      {
+        "name": "Tom Alberg",
+        "role": "Board Member",
+        "quote": "We are a retailer. Why are we trying to compete with IBM and Oracle in enterprise tech?"
+      }
+    ],
     "financialSituation": {
       "retailMargin": "1-2%",
       "techSpend": "$200M+",
@@ -454,6 +564,28 @@
     "company": "Microsoft",
     "year": 2014,
     "industryContext": "Windows and Office sales are slowing. Mobile was a disaster. Satya Nadella has just taken over as CEO.",
+    "agenda": [
+      "Define the new strategic direction under Satya Nadella.",
+      "Decide the fate of the Windows monopoly strategy.",
+      "Determine the investment level for Azure cloud services."
+    ],
+    "characters": [
+      {
+        "name": "Satya Nadella",
+        "role": "CEO",
+        "quote": "Our industry does not respect tradition — it only respects innovation. We must be 'Cloud First, Mobile First'."
+      },
+      {
+        "name": "Steve Ballmer",
+        "role": "Former CEO / Board Member",
+        "quote": "Windows is the engine that drives this company. We cannot give up our leverage."
+      },
+      {
+        "name": "Amy Hood",
+        "role": "CFO",
+        "quote": "The margins in cloud are there, but the capital expenditure required to catch Amazon is massive."
+      }
+    ],
     "financialSituation": {
       "cash": "$80B",
       "stockStatus": "Stagnant for 10 years",
@@ -528,6 +660,28 @@
     "company": "Disney",
     "year": 2017,
     "industryContext": "Cable TV (ESPN) is losing subscribers to 'cord-cutting'. Netflix is spending billions on content. We license our movies to them.",
+    "agenda": [
+      "Address the decline in linear TV (ESPN) revenues.",
+      "Decide whether to renew the Netflix licensing deal.",
+      "Evaluate the launch of a proprietary Direct-to-Consumer platform."
+    ],
+    "characters": [
+      {
+        "name": "Bob Iger",
+        "role": "CEO",
+        "quote": "We are selling nuclear weapons to a third world country. We are arming our biggest competitor."
+      },
+      {
+        "name": "Kevin Mayer",
+        "role": "Chief Strategy Officer",
+        "quote": "If we pull our content, we lose hundreds of millions in guaranteed revenue overnight. Wall Street will punish us."
+      },
+      {
+        "name": "Jimmy Pitaro",
+        "role": "Chairman, ESPN",
+        "quote": "The cable bundle is unraveling faster than we predicted. We need a lifeboat."
+      }
+    ],
     "financialSituation": {
       "cableProfit": "$2B/quarter",
       "licensingRev": "$500M/year",
@@ -602,6 +756,28 @@
     "company": "Nokia",
     "year": 2007,
     "industryContext": "Nokia is the #1 phone maker in the world. The iPhone has just been announced. Our Symbian OS is old but stable.",
+    "agenda": [
+      "Analyze the threat posed by the newly announced Apple iPhone.",
+      "Evaluate the viability of the Symbian operating system.",
+      "Decide on a software strategy: rebuild, partner, or adopt Android."
+    ],
+    "characters": [
+      {
+        "name": "Olli-Pekka Kallasvuo",
+        "role": "CEO",
+        "quote": "Apple is a niche computer company. They don't understand the complexities of global cellular networks."
+      },
+      {
+        "name": "Anssi Vanjoki",
+        "role": "EVP, Markets",
+        "quote": "Using Android is like peeing in your pants for warmth in winter. It feels good for a moment, but then it gets worse."
+      },
+      {
+        "name": "Software Engineer",
+        "role": "Internal Memo",
+        "quote": "Symbian is a burning platform. We are spending more time fixing bugs than building features."
+      }
+    ],
     "financialSituation": {
       "marketShare": "40%",
       "revenue": "€51B",
@@ -668,6 +844,215 @@
       {
         "title": "Speed of Collapse",
         "text": "Market leaders can go from 40% share to zero in less than 5 years during a paradigm shift."
+      }
+    ]
+  },
+  {
+    "id": "yahoo-google",
+    "company": "Yahoo!",
+    "year": 1998,
+    "industryContext": "Yahoo! is the front door to the internet. A small startup called Google wants to license their search technology to us for $1 million.",
+    "agenda": [
+      "Evaluate Google's search technology licensing offer.",
+      "Determine the strategic importance of search vs. portal content.",
+      "Assess the risk of users leaving Yahoo! to find information."
+    ],
+    "characters": [
+      {
+        "name": "Jerry Yang",
+        "role": "Co-Founder",
+        "quote": "We are a media company. We want people to stay on Yahoo, not search and leave."
+      },
+      {
+        "name": "Tim Koogle",
+        "role": "CEO",
+        "quote": "Search is a commodity. We can build it ourselves or buy it cheaper later."
+      },
+      {
+        "name": "Larry Page",
+        "role": "Google Co-Founder",
+        "quote": "Our PageRank algorithm provides significantly better results than human-curated directories."
+      }
+    ],
+    "financialSituation": {
+      "revenue": "$200M",
+      "marketCap": "$4B",
+      "metrics": [
+        {
+          "label": "Daily Visitors",
+          "value": "95 Million"
+        },
+        {
+          "label": "Search Quality",
+          "value": "Poor (Directory based)"
+        }
+      ]
+    },
+    "rounds": [
+      {
+        "step": 1,
+        "title": "The Search Dilemma",
+        "description": "Google's search is undeniably better. But if we use it, users will find what they want and leave Yahoo faster. Do we license it, buy them, or ignore them?",
+        "options": [
+          {
+            "id": "buy-google",
+            "text": "Buy them outright for $1M. Integrate their tech and keep users in our ecosystem.",
+            "impact": {
+              "revenue": 5,
+              "marketCap": 10,
+              "survival": 1
+            },
+            "lesson": "Recognizing a paradigm shift early is the most valuable skill in business.",
+            "stakeholderImpact": {
+              "shareholders": 10,
+              "employees": 5,
+              "creditors": 0,
+              "regulators": 0,
+              "media": 5
+            }
+          },
+          {
+            "id": "license-google",
+            "text": "License their tech. Let them power our search while we focus on content.",
+            "impact": {
+              "revenue": 1.2,
+              "marketCap": 1.5,
+              "survival": 0.5
+            },
+            "lesson": "Outsourcing a core utility to a competitor allows them to build their brand at your expense.",
+            "stakeholderImpact": {
+              "shareholders": 2,
+              "employees": 0,
+              "creditors": 0,
+              "regulators": 0,
+              "media": 2
+            }
+          },
+          {
+            "id": "ignore-google",
+            "text": "Pass. We are a portal. Search is just a feature, not a business.",
+            "impact": {
+              "revenue": 0.8,
+              "marketCap": 0.2,
+              "survival": 0.1
+            },
+            "lesson": "Misidentifying your core product leads to strategic blindness.",
+            "stakeholderImpact": {
+              "shareholders": -5,
+              "employees": -2,
+              "creditors": 0,
+              "regulators": 0,
+              "media": -5
+            }
+          }
+        ]
+      }
+    ],
+    "historicalReality": "Yahoo! refused to buy Google for $1M in 1998. In 2002, they tried to buy Google for $3B, but Google wanted $5B. Yahoo! eventually faded into irrelevance while Google became a trillion-dollar company.",
+    "lessons": [
+      {
+        "title": "Strategic Blindness",
+        "text": "Yahoo! thought they were a media company, failing to realize that search was the true gateway to the internet."
+      },
+      {
+        "title": "The Cost of Delay",
+        "text": "A $1M acquisition missed in 1998 became a $5B missed opportunity in 2002."
+      }
+    ]
+  },
+  {
+    "id": "kodak-digital",
+    "company": "Kodak",
+    "year": 1975,
+    "industryContext": "Kodak dominates the photographic film market with near-monopoly margins. An engineer has just invented the first digital camera.",
+    "agenda": [
+      "Review the new 'filmless' camera prototype.",
+      "Assess the potential threat to our core film and chemical business.",
+      "Determine R&D allocation for digital imaging."
+    ],
+    "characters": [
+      {
+        "name": "Steve Sasson",
+        "role": "Engineer",
+        "quote": "It's filmless photography. It records images on a cassette tape. It's the future."
+      },
+      {
+        "name": "Management",
+        "role": "Executive Board",
+        "quote": "That's cute, but don't tell anyone about it. We are in the film business."
+      },
+      {
+        "name": "CFO",
+        "role": "Chief Financial Officer",
+        "quote": "Our margins on film and chemicals are 80%. Why would we cannibalize that for a low-resolution digital toy?"
+      }
+    ],
+    "financialSituation": {
+      "revenue": "$5B",
+      "marketShare": "90% (Film)",
+      "metrics": [
+        {
+          "label": "Film Margins",
+          "value": "80%"
+        },
+        {
+          "label": "Digital Resolution",
+          "value": "0.01 Megapixels"
+        }
+      ]
+    },
+    "rounds": [
+      {
+        "step": 1,
+        "title": "The Digital Threat",
+        "description": "The prototype is clunky and low-resolution, but it proves digital photography is possible. How do we proceed?",
+        "options": [
+          {
+            "id": "bury-it",
+            "text": "Hide the technology. We cannot risk our film monopoly.",
+            "impact": {
+              "revenue": 1.1,
+              "marketShare": 1.0,
+              "survival": 0.1
+            },
+            "lesson": "Protecting short-term cash cows at the expense of long-term innovation is fatal.",
+            "stakeholderImpact": {
+              "shareholders": 5,
+              "employees": 0,
+              "creditors": 0,
+              "regulators": 0,
+              "media": 0
+            }
+          },
+          {
+            "id": "invest-heavily",
+            "text": "Pivot the company. Invest heavily in digital, even if it hurts film sales.",
+            "impact": {
+              "revenue": 0.8,
+              "marketShare": 0.5,
+              "survival": 1.0
+            },
+            "lesson": "Cannibalizing your own business is painful but necessary for survival.",
+            "stakeholderImpact": {
+              "shareholders": -5,
+              "employees": -2,
+              "creditors": 0,
+              "regulators": 0,
+              "media": 5
+            }
+          }
+        ]
+      }
+    ],
+    "historicalReality": "Kodak invented the digital camera but buried it to protect their film business. When digital eventually took over, Kodak was too late to adapt and filed for bankruptcy in 2012.",
+    "lessons": [
+      {
+        "title": "The Innovator's Dilemma",
+        "text": "Incumbents struggle to embrace disruptive technologies because they initially offer lower margins and appeal to smaller markets."
+      },
+      {
+        "title": "Denial is Not a Strategy",
+        "text": "Ignoring a technological shift does not stop it from happening."
       }
     ]
   }

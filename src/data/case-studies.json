@@ -52,5 +52,41 @@
     "summary": "A period during the Dutch Golden Age when contract prices for some bulbs of the recently introduced and fashionable tulip reached extraordinarily high levels, and then dramatically collapsed.",
     "keyPlayers": ["Dutch Merchants", "Speculators"],
     "impact": "Often cited as the first recorded speculative bubble. While its economic impact was limited, it remains a powerful psychological case study on the madness of crowds and speculative excess."
+  },
+  {
+    "id": "long-term-capital-management",
+    "year": "1998",
+    "title": "The Collapse of LTCM",
+    "category": "Hedge Fund Failure",
+    "summary": "Long-Term Capital Management, a hedge fund led by Nobel laureates, used massive leverage for arbitrage strategies. The 1998 Russian financial crisis caused their models to fail, leading to a near-collapse of the global financial system.",
+    "keyPlayers": ["John Meriwether", "Myron Scholes", "Robert Merton", "Federal Reserve Bank of New York"],
+    "impact": "The Fed orchestrated a $3.6 billion bailout by major banks to prevent systemic contagion. It highlighted the extreme risks of high leverage and the limitations of mathematical models in unpredictable markets."
+  },
+  {
+    "id": "bernie-madoff-ponzi",
+    "year": "2008",
+    "title": "The Madoff Ponzi Scheme",
+    "category": "Financial Fraud",
+    "summary": "Bernie Madoff orchestrated the largest Ponzi scheme in history, defrauding thousands of investors of an estimated $64.8 billion. The scheme unraveled during the 2008 financial crisis when clients requested massive withdrawals.",
+    "keyPlayers": ["Bernie Madoff", "Harry Markopolos (Whistleblower)", "SEC"],
+    "impact": "Exposed massive regulatory failures at the SEC. Led to increased scrutiny of investment advisors, tighter compliance rules, and a loss of trust in the financial industry."
+  },
+  {
+    "id": "covid-19-crash",
+    "year": "2020",
+    "title": "The COVID-19 Market Crash",
+    "category": "Pandemic Shock",
+    "summary": "A sudden, severe global stock market crash caused by the outbreak of the COVID-19 pandemic. Markets experienced unprecedented volatility, triggering multiple circuit breakers in a single week.",
+    "keyPlayers": ["Federal Reserve", "Global Central Banks", "Retail Investors"],
+    "impact": "Resulted in unprecedented monetary and fiscal stimulus globally. Accelerated the adoption of digital technologies and remote work, leading to a massive, rapid recovery in technology stocks."
+  },
+  {
+    "id": "gamestop-short-squeeze",
+    "year": "2021",
+    "title": "The GameStop Short Squeeze",
+    "category": "Market Manipulation / Retail Rebellion",
+    "summary": "Retail investors on Reddit's r/wallstreetbets coordinated a massive short squeeze on GameStop (GME) stock, driving the price up exponentially and causing massive losses for hedge funds that had shorted the stock.",
+    "keyPlayers": ["Keith Gill (Roaring Kitty)", "Melvin Capital", "Robinhood", "Citadel Securities"],
+    "impact": "Demonstrated the power of decentralized retail investors using social media. Led to congressional hearings on market mechanics, payment for order flow (PFOF), and the gamification of investing."
   }
 ]

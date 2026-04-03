@@ -29,6 +29,7 @@ import { Chart as ChartJS, registerables } from 'chart.js';
 import { Line, Pie, Bar } from 'react-chartjs-2';
 import scenariosData from './data/scenarios.json';
 import boardroomData from './data/boardroom.json';
+import companiesData from './data/companies.json';
 
 import { LivingNewsFeed } from './components/modules/LivingNewsFeed';
 import { FearGreedDial } from './components/modules/FearGreedDial';
@@ -40,6 +41,7 @@ import { CompetitorBoard } from './components/modules/CompetitorBoard';
 import { PostGameDebrief } from './components/modules/PostGameDebrief';
 import { DecisionAutopsyModal } from './components/modules/DecisionAutopsyModal';
 import { CompanyProfileModal } from './components/modules/CompanyProfileModal';
+import { UserOnboardingModal } from './components/modules/UserOnboardingModal';
 
 ChartJS.register(...registerables);
 
@@ -143,6 +145,12 @@ interface BoardroomRound {
   title: string;
   description: string;
   options: BoardroomOption[];
+  opinions?: {
+    CEO?: string;
+    CFO?: string;
+    Investor?: string;
+    StrategyDirector?: string;
+  };
 }
 
 interface BoardroomCase {
@@ -150,6 +158,8 @@ interface BoardroomCase {
   company: string;
   year: number;
   industryContext: string;
+  agenda?: string[];
+  characters?: { name: string; role: string; quote: string; }[];
   financialSituation: {
     revenue?: string;
     subscribers?: string;
@@ -189,16 +199,6 @@ export default function App() {
   // Market Event State
   const [currentMarketEvent, setCurrentMarketEvent] = useState<{ title: string, description: string, sectorImpacts: Record<string, number>, lessonId?: string } | null>(null);
   const [eventAttribution, setEventAttribution] = useState<{ event: string; impact: number; month: number }[]>([]);
-
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  useEffect(() => {
-    if (isDarkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, [isDarkMode]);
 
   // Competitors State
   const [competitorPortfolios, setCompetitorPortfolios] = useState<Record<string, number>>({
@@ -430,7 +430,26 @@ export default function App() {
   }, [investmentAmount, projectedReturn, horizon]);
 
   const handleScenarioSelect = async (scenario: Scenario) => {
-    setSelectedScenario(scenario);
+    const groupedSectors = companiesData.reduce((acc, company) => {
+      const sectorName = company.sector;
+      if (!acc[sectorName]) {
+        acc[sectorName] = {
+          name: sectorName,
+          performance: "Mixed",
+          description: "Sector performance varies.",
+          companies: []
+        };
+      }
+      acc[sectorName].companies.push(company);
+      return acc;
+    }, {} as Record<string, any>);
+    
+    const scenarioWithCompanies = {
+      ...scenario,
+      sectors: Object.values(groupedSectors)
+    };
+
+    setSelectedScenario(scenarioWithCompanies);
     setStep('macro');
     setAllocations({});
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -441,7 +460,11 @@ export default function App() {
       
       if (scenarioModules[modulePath]) {
         const data = await scenarioModules[modulePath]() as any;
-        setExtendedScenarioData(data.default || data);
+        const extendedData = data.default || data;
+        setExtendedScenarioData({
+          ...extendedData,
+          sectors: Object.values(groupedSectors)
+        });
       } else {
         setExtendedScenarioData(null);
       }
@@ -658,17 +681,10 @@ export default function App() {
 
   return (
     <div className="min-h-screen max-w-[1100px] mx-auto px-6 py-12">
+      <UserOnboardingModal />
       {/* Header */}
       <header className="text-center mb-12 relative masthead">
         <div className="absolute top-0 right-0 flex gap-2 p-1 bg-tan-light border border-tan-mid items-center">
-          <button 
-            onClick={() => setIsDarkMode(!isDarkMode)}
-            className="px-2 py-1 hover:bg-tan-mid transition-colors"
-            title="Toggle Terminal Theme"
-          >
-            {isDarkMode ? '☀️' : '🌙'}
-          </button>
-          <div className="w-px h-4 bg-dark-sepia opacity-30"></div>
           <button 
             onClick={() => setCurrentModule('archive')}
             className={`px-3 py-1 font-mono text-[10px] uppercase transition-all ${currentModule === 'archive' ? 'bg-ink text-parchment' : 'hover:bg-tan-mid'}`}
@@ -1786,22 +1802,32 @@ export default function App() {
                         <div className="mb-10 space-y-4">
                           <h4 className="font-mono text-xs uppercase tracking-widest opacity-60 mb-4 border-b border-dark-sepia pb-1">Board Member Commentary:</h4>
                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <div className="p-4 bg-tan-light border-l-4 border-ink">
-                              <p className="font-bold text-xs uppercase mb-1">Chief Executive Officer</p>
-                              <p className="text-sm italic opacity-80">"{selectedBoardroomCase.rounds[currentBoardroomRound].opinions?.CEO || 'We must take bold action to secure our market position.'}"</p>
-                            </div>
-                            <div className="p-4 bg-tan-light border-l-4 border-sepia">
-                              <p className="font-bold text-xs uppercase mb-1">Chief Financial Officer</p>
-                              <p className="text-sm italic opacity-80">"{selectedBoardroomCase.rounds[currentBoardroomRound].opinions?.CFO || 'We need to carefully consider the impact on our margins and cash flow.'}"</p>
-                            </div>
-                            <div className="p-4 bg-tan-light border-l-4 border-rust">
-                              <p className="font-bold text-xs uppercase mb-1">Lead Investor</p>
-                              <p className="text-sm italic opacity-80">"{selectedBoardroomCase.rounds[currentBoardroomRound].opinions?.Investor || 'I am looking for strategies that maximize shareholder value in the medium term.'}"</p>
-                            </div>
-                            <div className="p-4 bg-tan-light border-l-4 border-dark-sepia">
-                              <p className="font-bold text-xs uppercase mb-1">Strategy Director</p>
-                              <p className="text-sm italic opacity-80">"{selectedBoardroomCase.rounds[currentBoardroomRound].opinions?.StrategyDirector || 'Our focus should be on long-term competitive advantage and market trends.'}"</p>
-                            </div>
+                            {selectedBoardroomCase.characters?.map((char, i) => (
+                              <div key={i} className="p-4 bg-tan-light border-l-4 border-ink">
+                                <p className="font-bold text-xs uppercase mb-1">{char.role}: {char.name}</p>
+                                <p className="text-sm italic opacity-80">"{char.quote}"</p>
+                              </div>
+                            ))}
+                            {!selectedBoardroomCase.characters && (
+                              <>
+                                <div className="p-4 bg-tan-light border-l-4 border-ink">
+                                  <p className="font-bold text-xs uppercase mb-1">Chief Executive Officer</p>
+                                  <p className="text-sm italic opacity-80">"{selectedBoardroomCase.rounds[currentBoardroomRound].opinions?.CEO || 'We must take bold action to secure our market position.'}"</p>
+                                </div>
+                                <div className="p-4 bg-tan-light border-l-4 border-sepia">
+                                  <p className="font-bold text-xs uppercase mb-1">Chief Financial Officer</p>
+                                  <p className="text-sm italic opacity-80">"{selectedBoardroomCase.rounds[currentBoardroomRound].opinions?.CFO || 'We need to carefully consider the impact on our margins and cash flow.'}"</p>
+                                </div>
+                                <div className="p-4 bg-tan-light border-l-4 border-rust">
+                                  <p className="font-bold text-xs uppercase mb-1">Lead Investor</p>
+                                  <p className="text-sm italic opacity-80">"{selectedBoardroomCase.rounds[currentBoardroomRound].opinions?.Investor || 'I am looking for strategies that maximize shareholder value in the medium term.'}"</p>
+                                </div>
+                                <div className="p-4 bg-tan-light border-l-4 border-dark-sepia">
+                                  <p className="font-bold text-xs uppercase mb-1">Strategy Director</p>
+                                  <p className="text-sm italic opacity-80">"{selectedBoardroomCase.rounds[currentBoardroomRound].opinions?.StrategyDirector || 'Our focus should be on long-term competitive advantage and market trends.'}"</p>
+                                </div>
+                              </>
+                            )}
                           </div>
                         </div>
 
@@ -1841,6 +1867,19 @@ export default function App() {
                           {selectedBoardroomCase.industryContext}
                         </p>
                       </div>
+                      {selectedBoardroomCase.agenda && (
+                        <div className="p-6 bg-tan-light border border-tan-mid">
+                          <h4 className="font-mono text-[10px] uppercase tracking-widest mb-4 border-b border-dark-sepia pb-1">Meeting Agenda</h4>
+                          <ul className="space-y-3">
+                            {selectedBoardroomCase.agenda.map((item, i) => (
+                              <li key={i} className="flex items-start gap-2 text-xs">
+                                <span className="font-mono opacity-50 mt-0.5">{i + 1}.</span>
+                                <span>{item}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
