@@ -188,6 +188,7 @@ import { CorporateArchetypes } from './components/modules/CorporateArchetypes';
 import { CaseStudyDatabase } from './components/modules/CaseStudyDatabase';
 import { GlossaryText } from './components/ui/GlossaryText';
 import { DownloadReportButton } from './components/ui/DownloadReportButton';
+import { Testimonials } from './components/Testimonials';
 
 export default function App() {
   const [currentModule, setCurrentModule] = useState<'archive' | 'boardroom' | 'academy' | 'case-studies'>('archive');
@@ -2210,6 +2211,9 @@ export default function App() {
           />
         )}
       </main>
+
+      {/* Testimonials / Field Reports */}
+      <Testimonials />
 
       {/* Footer */}
       <footer className="mt-24 pt-8 border-t border-tan-mid text-center opacity-40 font-mono text-[10px] uppercase tracking-widest">
