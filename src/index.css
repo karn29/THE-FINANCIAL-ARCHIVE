@@ -212,8 +212,43 @@ input:focus, textarea:focus, select:focus {
 }
 
 ::placeholder {
-  color: var(--sepia);
+  color: #6B5A3E;
   font-style: italic;
+}
+
+/* Global Text Visibility Fixes */
+/* Ensure text on gold/dark backgrounds uses dark ink, not grey */
+.bg-sepia, .bg-ink, [style*="background: #B8960C"], [style*="background:#B8960C"] {
+  color: #1A1208;
+}
+
+/* Muted text minimum contrast */
+.text-muted, .opacity-60, .opacity-80 {
+  color: #6B5A3E;
+}
+
+/* Error messages */
+.error-text {
+  color: #8B1A1A;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+/* Small caps labels minimum sizing */
+[style*="font-variant: small-caps"], [style*="fontVariant"] {
+  min-height: 1em;
+}
+
+/* Prevent iOS zoom on input focus */
+@media screen and (max-width: 767px) {
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Minimum touch target size */
+button, [role="button"], a, input[type="submit"] {
+  min-height: 44px;
 }
 
 /* Navigation */
