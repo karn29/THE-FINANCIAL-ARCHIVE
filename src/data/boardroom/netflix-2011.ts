@@ -1,0 +1,77 @@
+export const netflix2011 = {
+  id: 'netflix-2011',
+  company: 'Netflix',
+  year: 2011,
+  stakes: 'You just split your company in two and lost 800,000 subscribers in a month. The board is watching.',
+  situation: {
+    revenue: '$3.2B',
+    growth: '+34% YoY',
+    metric: 'Subscribers: 23.8M (down from 24.6M)',
+    brief: 'Netflix is at a crossroads. Reed Hastings has just announced Qwikster \u2014 splitting the DVD-by-mail business from streaming. The stock has crashed 77% from its peak. 800,000 subscribers have left. The media is calling it the worst business decision of the decade. But Hastings sees something nobody else does: streaming is the future, and the DVD business is a dying weight.',
+  },
+  crisis: {
+    description: 'The Qwikster debacle has destroyed investor confidence. Customers are furious about the 60% price hike that separated DVD and streaming plans. Competitors smell blood \u2014 Amazon, Hulu, and HBO are all accelerating their streaming investments. The board is questioning whether Hastings should remain CEO.',
+    stakes: 'If Netflix doubles down on streaming, it could become the defining entertainment company of the 21st century. If it retreats, it becomes another Blockbuster \u2014 a cautionary tale about failing to evolve.',
+  },
+  chartData: {
+    labels: ['Q1 2010', 'Q2 2010', 'Q3 2010', 'Q4 2010', 'Q1 2011', 'Q2 2011', 'Q3 2011', 'Q4 2011', 'Q1 2012', 'Q2 2012'],
+    values: [14.0, 15.0, 16.9, 20.0, 22.8, 24.6, 23.8, 21.7, 23.4, 25.6],
+    label: 'Subscribers (Millions)',
+    crisisPoint: 6,
+    annotation: 'Qwikster announcement \u2014 800K subscribers leave',
+  },
+  boardMembers: [
+    {
+      name: 'Jay Hoag',
+      title: 'Lead Independent Director',
+      stance: 'pro',
+      argument: 'Reed is right about streaming. The DVD business is a melting ice cube. Every quarter we delay the transition, we lose ground to Amazon. Yes, we lost subscribers. But we lost the wrong subscribers \u2014 the ones who did not want to pay for the future. The ones who stayed are our real base. Double down on original content. Spend aggressively. This is a land grab.',
+    },
+    {
+      name: 'A. George Battle',
+      title: 'Board Member, Former Ask.com CEO',
+      stance: 'cautious',
+      argument: 'Reed, you moved too fast. The price hike was arrogant. Splitting the brand was confusing. Our stock is down 77%. Institutional investors are fleeing. We need to stabilize before we accelerate. Bring back the combined plan. Rebuild trust. Then \u2014 and only then \u2014 should we talk about spending billions on content we have never made before. Hubris kills companies.',
+    },
+  ],
+  decisions: [
+    {
+      id: 'double-down-streaming',
+      title: 'DOUBLE DOWN ON STREAMING',
+      consequence: 'Kill Qwikster. Invest $5B+ in original content. Accept short-term subscriber losses. Bet the entire company on the streaming future.',
+      riskAppetite: 20,
+      innovation: 25,
+      financialDiscipline: -10,
+      peopleBet: 15,
+      strategicClarity: 25,
+    },
+    {
+      id: 'retreat-and-stabilize',
+      title: 'RETREAT AND STABILIZE',
+      consequence: 'Reverse the price hike. Keep DVD and streaming bundled. Focus on profitability over growth. Slow content spending until subscriber base recovers.',
+      riskAppetite: -15,
+      innovation: -20,
+      financialDiscipline: 20,
+      peopleBet: -5,
+      strategicClarity: -15,
+    },
+    {
+      id: 'hybrid-approach',
+      title: 'HYBRID APPROACH',
+      consequence: 'Keep streaming investment but at a slower pace. Maintain DVD business as cash cow. Reduce content spend by 40%. Play defense while building offense.',
+      riskAppetite: 0,
+      innovation: 5,
+      financialDiscipline: 10,
+      peopleBet: 5,
+      strategicClarity: -5,
+    },
+  ],
+  historicalOutcome: {
+    whatHappened: 'Reed Hastings killed Qwikster but doubled down on everything else. Netflix launched House of Cards in 2013 \u2014 the first major original series. By 2015, Netflix had 75 million subscribers. By 2020, it had 200 million. The stock went from $7.78 (split-adjusted) in 2011 to over $600 by 2021. It became the most important entertainment company in the world.',
+    correctChoice: 'double-down-streaming',
+    alternateHistories: {
+      'retreat-and-stabilize': 'Netflix would have become a profitable but shrinking DVD company. Amazon and Disney would have owned streaming. Netflix would have been acquired or gone bankrupt by 2018.',
+      'hybrid-approach': 'Netflix would have grown slowly but lost the content arms race. Without House of Cards and the original content bet, it would have remained a licensed content aggregator \u2014 vulnerable to studios pulling their content, which is exactly what happened with Disney+ in 2019.',
+    },
+  },
+};
