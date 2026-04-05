@@ -1,0 +1,77 @@
+export const infosys1999 = {
+  id: 'infosys-1999',
+  company: 'Infosys',
+  year: 1999,
+  stakes: 'Y2K is printing money but it ends in 12 months. Do you bet the company on what comes next?',
+  situation: {
+    revenue: '$121M',
+    growth: '+58% YoY',
+    metric: 'Employees: 5,389',
+    brief: 'Infosys is riding the Y2K wave. Every global corporation is paying Indian IT companies millions to fix their legacy code before the millennium bug hits. The money is flowing like never before. But Narayana Murthy and Nandan Nilekani know this gold rush ends on January 1, 2000. The question is what comes after. Do you keep milking Y2K or do you invest now in building capabilities that will matter in a post-Y2K world?',
+  },
+  crisis: {
+    description: 'Y2K remediation work accounts for over 40% of revenue. When the clock strikes midnight on December 31, 1999, this revenue stream vanishes overnight. Competitors are hiring aggressively, burning cash on Y2K talent that will be useless in six months. Infosys must decide: keep maximizing Y2K profits or invest in enterprise solutions, consulting capabilities, and global delivery infrastructure that will define the next decade of Indian IT.',
+    stakes: 'If Infosys invests now, it could become the first Indian IT company to compete with Accenture and IBM at the enterprise level. If it over-invests and Y2K revenue drops without replacement, it could face a crisis that destroys investor confidence in the entire Indian IT model.',
+  },
+  chartData: {
+    labels: ['FY96', 'FY97', 'FY98', 'FY99', 'FY00', 'FY01', 'FY02', 'FY03', 'FY04', 'FY05'],
+    values: [27, 39, 68, 121, 203, 414, 545, 754, 1063, 1592],
+    label: 'Revenue ($M)',
+    crisisPoint: 3,
+    annotation: 'Y2K peak \u2014 40% revenue at risk',
+  },
+  boardMembers: [
+    {
+      name: 'Nandan Nilekani',
+      title: 'COO & Managing Director',
+      stance: 'pro',
+      argument: 'Y2K is a sugar rush. Every rupee we earn from it is borrowed from the future. We must invest NOW in building enterprise consulting capabilities, productized solutions, and deep domain expertise in banking, insurance, and telecom. The global CIOs who trusted us with Y2K will trust us with transformation \u2014 but only if we can offer more than just cheap code. We need to hire MBAs, not just engineers. We need to open offices in Zurich and London, not just Bangalore. This is our window to become a global company.',
+    },
+    {
+      name: 'T.V. Mohandas Pai',
+      title: 'CFO',
+      stance: 'cautious',
+      argument: 'Nandan is right about Y2K ending. But the solution is not to spend aggressively when we do not know what the post-Y2K world looks like. We are a 5,000-person company competing against Accenture which has 75,000 consultants. The safe play is to maximize Y2K profits, build a war chest, and then invest selectively once we see which sectors need us. Over-investing now in capabilities we have not proven we can deliver is a recipe for the kind of disaster that killed Satyam.',
+    },
+  ],
+  decisions: [
+    {
+      id: 'invest-transform',
+      title: 'INVEST IN TRANSFORMATION',
+      consequence: 'Hire 2,000 new employees in enterprise consulting, domain expertise, and global delivery. Open offices in 5 new countries. Reduce Y2K dependency to under 20% of revenue before the deadline. Accept lower margins for two years.',
+      riskAppetite: 20,
+      innovation: 25,
+      financialDiscipline: -10,
+      peopleBet: 25,
+      strategicClarity: 20,
+    },
+    {
+      id: 'maximize-y2k',
+      title: 'MAXIMIZE Y2K PROFITS',
+      consequence: 'Keep billing Y2K work at premium rates until the last possible moment. Build a massive cash reserve. Delay transformation investments until post-Y2K clarity emerges.',
+      riskAppetite: -10,
+      innovation: -20,
+      financialDiscipline: 25,
+      peopleBet: -10,
+      strategicClarity: -15,
+    },
+    {
+      id: 'balanced-transition',
+      title: 'BALANCED TRANSITION',
+      consequence: 'Continue Y2K work but redirect 30% of engineering talent to new practice areas. Start small consulting engagements with existing Y2K clients. Test demand before scaling investment.',
+      riskAppetite: 5,
+      innovation: 10,
+      financialDiscipline: 10,
+      peopleBet: 10,
+      strategicClarity: 5,
+    },
+  ],
+  historicalOutcome: {
+    whatHappened: 'Infosys invested aggressively in post-Y2K capabilities while competitors were still milking the gravy train. By 2001, when the Y2K hangover hit and the dot-com crash devastated the tech sector, Infosys had already built a diversified enterprise services business. Revenue grew from $121M in 1999 to $1.6B by 2005. Infosys became the gold standard for Indian IT services, listed on NASDAQ, and made Narayana Murthy a household name. The company that bet on what came next won the decade.',
+    correctChoice: 'invest-transform',
+    alternateHistories: {
+      'maximize-y2k': 'Companies that maximized Y2K profits without investing in new capabilities were devastated by the 2001 tech crash. Many mid-size Indian IT firms that followed this strategy either went bankrupt or were acquired at distressed valuations. Without the enterprise consulting pivot, Infosys would have been just another body shop.',
+      'balanced-transition': 'A balanced approach would have preserved margins but ceded the enterprise consulting market to Wipro and TCS, who were also investing aggressively. In a winner-take-all market for global IT services contracts, being cautious meant being second \u2014 and second place in enterprise IT means 40% lower margins.',
+    },
+  },
+};

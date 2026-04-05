@@ -18,9 +18,8 @@ export const CaseStudyDatabase: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
   useEffect(() => {
-    import('../../data/case-studies.json').then(data => {
-      setCaseStudies(data.default || data);
-    });
+    // Case studies data was migrated to boardroom/market modules
+    setCaseStudies([]);
   }, []);
 
   const categories = Array.from(new Set(caseStudies.map(c => c.category)));

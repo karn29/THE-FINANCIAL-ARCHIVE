@@ -1,0 +1,77 @@
+export const zomato2021 = {
+  id: 'zomato-2021',
+  company: 'Zomato',
+  year: 2021,
+  stakes: 'Blinkit is burning 400Cr a month. Deepinder wants to acquire it. The Street thinks he has lost his mind.',
+  situation: {
+    revenue: '4,192 Cr',
+    growth: '+62% YoY',
+    metric: 'Cash Burn: ~350 Cr/quarter',
+    brief: 'Zomato has just gone public in a blockbuster IPO that valued the company at over 1 lakh crore. Deepinder Goyal is now one of the most powerful founders in India. But he is about to make the most controversial move of his career: acquiring Blinkit (formerly Grofers), a quick-commerce company that is burning 400 crore a month with no path to profitability. The stock market thinks it is suicide. Deepinder thinks it is the future of commerce.',
+  },
+  crisis: {
+    description: 'Blinkit is hemorrhaging cash. Its unit economics are deeply negative \u2014 every order loses money on delivery, warehousing, and discounts. Competitors Swiggy Instamart and Zepto are also burning cash, creating a three-way war of attrition. Zomato stock has already fallen 50% from its IPO high. Acquiring Blinkit will dilute shareholders and extend the path to profitability by years. But Deepinder argues that quick-commerce is the next trillion-dollar opportunity in India, and Zomato must own it.',
+    stakes: 'If Blinkit works, Zomato becomes India first super-app for food and grocery delivery \u2014 a company worth $50 billion or more. If it fails, Zomato burns through its IPO war chest, destroys shareholder value, and proves that Indian startups cannot resist the temptation of growth-at-all-costs.',
+  },
+  chartData: {
+    labels: ['Jul 21', 'Oct 21', 'Jan 22', 'Apr 22', 'Jul 22', 'Oct 22', 'Jan 23', 'Apr 23', 'Jul 23', 'Oct 23'],
+    values: [126, 140, 120, 65, 50, 62, 55, 60, 95, 120],
+    label: 'Stock Price (INR)',
+    crisisPoint: 4,
+    annotation: 'Blinkit acquisition announced \u2014 stock crashes',
+  },
+  boardMembers: [
+    {
+      name: 'Deepinder Goyal',
+      title: 'CEO & Founder',
+      stance: 'pro',
+      argument: 'The Indian consumer is moving to 10-minute delivery for everything \u2014 groceries, electronics, medicines. This is not a fad. This is a structural shift in how 500 million Indians will shop. Blinkit has the dark store network, the technology, and the operational playbook. Yes, it is burning cash. But so was Zomato food delivery in 2018. We figured out unit economics once. We will do it again. If we do not buy Blinkit, Swiggy will. And then we lose the war before it begins.',
+    },
+    {
+      name: 'Sanjeev Bikhchandani',
+      title: 'Board Member, Founder of Info Edge',
+      stance: 'cautious',
+      argument: 'Deepinder, I backed you from the beginning. But this acquisition makes me nervous. We went public to build a profitable food delivery business. Our investors bought that story. Now you want to bolt on a cash-burning grocery business that has failed twice before under different management. The market is punishing us already. Every rupee we spend on Blinkit is a rupee we are not spending on making food delivery profitable. We are not Amazon. We do not have infinite capital. Focus on what we are good at.',
+    },
+  ],
+  decisions: [
+    {
+      id: 'acquire-blinkit-full',
+      title: 'ACQUIRE BLINKIT \u2014 GO ALL IN',
+      consequence: 'Complete the 4,447 Cr acquisition. Integrate Blinkit into Zomato app. Invest 2,000 Cr over next 2 years in dark store expansion. Accept 3+ years of losses on quick-commerce. Bet on India quick-commerce becoming a $30B market.',
+      riskAppetite: 25,
+      innovation: 20,
+      financialDiscipline: -20,
+      peopleBet: 15,
+      strategicClarity: 15,
+    },
+    {
+      id: 'reject-acquisition',
+      title: 'REJECT THE ACQUISITION',
+      consequence: 'Walk away from Blinkit. Focus 100% on food delivery profitability. Return excess capital to shareholders. Let Swiggy fight the quick-commerce war and watch from the sidelines.',
+      riskAppetite: -20,
+      innovation: -15,
+      financialDiscipline: 25,
+      peopleBet: -10,
+      strategicClarity: 10,
+    },
+    {
+      id: 'strategic-investment',
+      title: 'STRATEGIC MINORITY INVESTMENT',
+      consequence: 'Take a 25% stake in Blinkit for 1,000 Cr. Keep operational independence. Option to acquire fully in 18 months if unit economics improve. Limit downside while maintaining optionality.',
+      riskAppetite: 5,
+      innovation: 10,
+      financialDiscipline: 10,
+      peopleBet: 5,
+      strategicClarity: -5,
+    },
+  ],
+  historicalOutcome: {
+    whatHappened: 'Deepinder acquired Blinkit for 4,447 Cr in all-stock deal. The stock crashed further. Analysts called it destruction of shareholder value. But by 2024, Blinkit was processing over 700,000 orders per day, growing 80%+ year-over-year, and rapidly improving unit economics. Zomato stock recovered from 40 to over 250, making it one of the best-performing stocks on the Indian market. Blinkit became the fastest-growing segment of Zomato and is now valued at more than the food delivery business itself. Deepinder was right. The Street was wrong.',
+    correctChoice: 'acquire-blinkit-full',
+    alternateHistories: {
+      'reject-acquisition': 'Swiggy or Reliance would have acquired Blinkit. Quick-commerce would have become a competitive moat that Zomato could not replicate. By 2024, Zomato would be a profitable but slow-growing food delivery company while competitors captured the much larger grocery delivery market. The stock would trade at 80-90, not 250.',
+      'strategic-investment': 'A minority stake would have given Zomato optionality but not control. When Blinkit needed capital infusions during the cash-burn phase, Zomato would not have been able to direct strategy. A competitor could have swooped in with a full acquisition offer. Half-measures in winner-take-all markets often result in losing everything.',
+    },
+  },
+};

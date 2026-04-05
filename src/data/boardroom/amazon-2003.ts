@@ -1,0 +1,77 @@
+export const amazon2003 = {
+  id: 'amazon-2003',
+  company: 'Amazon',
+  year: 2003,
+  stakes: 'AWS is an internal tool. Your engineers say open it to the world. The CFO says it is a distraction.',
+  situation: {
+    revenue: '$5.3B',
+    growth: '+34% YoY',
+    metric: 'Operating Margin: 5.1%',
+    brief: 'Amazon survived the dot-com crash that killed hundreds of internet companies. Jeff Bezos is obsessed with infrastructure. His engineers have built a massive internal computing platform to run Amazon.com. Now a small team led by Andy Jassy proposes something radical: sell this computing power to other companies as a service. The CFO thinks it is insane. Wall Street wants Amazon to focus on profitability. Bezos sees something else entirely.',
+  },
+  crisis: {
+    description: 'Amazon is barely profitable after years of losses. Wall Street is demanding the company prove it can make money, not launch into an entirely new business with zero revenue. The computing infrastructure team wants to offer storage (S3), compute (EC2), and database services to external developers. The CFO argues this will dilute focus, burn capital, and confuse investors. The engineering team argues this could be bigger than e-commerce itself.',
+    stakes: 'If Amazon launches AWS, it could create the most important technology platform since the internet itself. If it fails, Amazon burns precious capital during its most vulnerable period and gives Wall Street ammunition to demand leadership changes.',
+  },
+  chartData: {
+    labels: ['2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009'],
+    values: [2.8, 3.1, 3.9, 5.3, 6.9, 8.5, 10.7, 14.8, 19.2, 24.5],
+    label: 'Revenue ($B)',
+    crisisPoint: 3,
+    annotation: 'AWS proposal presented to leadership team',
+  },
+  boardMembers: [
+    {
+      name: 'Andy Jassy',
+      title: 'VP, AWS Division',
+      stance: 'pro',
+      argument: 'We have already built the hardest part \u2014 the infrastructure to run the largest e-commerce site on Earth. Every startup in the world needs computing power but cannot afford to build their own data centers. We can rent them ours. The margin on this business could be 30%+ because the infrastructure already exists. This is not a distraction. This is the next Amazon. Every company will need cloud computing. We should be the ones to provide it.',
+    },
+    {
+      name: 'Tom Szkutak',
+      title: 'CFO',
+      stance: 'cautious',
+      argument: 'Jeff, we just survived the dot-com crash. We have finally achieved profitability. Investors are watching every dollar. Launching a completely new business in infrastructure services \u2014 which has nothing to do with selling books and electronics \u2014 will confuse the market. The capital expenditure required is enormous. If this fails, we do not get a second chance. Focus on e-commerce. Grow the marketplace. Expand internationally. Do not bet the company on a science project.',
+    },
+  ],
+  decisions: [
+    {
+      id: 'launch-aws-full',
+      title: 'LAUNCH AWS \u2014 FULL COMMITMENT',
+      consequence: 'Invest billions in data centers worldwide. Launch S3 and EC2 publicly. Accept years of losses on AWS while building the platform. Ignore Wall Street concerns about diluted focus.',
+      riskAppetite: 25,
+      innovation: 30,
+      financialDiscipline: -15,
+      peopleBet: 20,
+      strategicClarity: 20,
+    },
+    {
+      id: 'focus-ecommerce',
+      title: 'FOCUS ON E-COMMERCE',
+      consequence: 'Kill the AWS proposal. Double down on marketplace, Prime membership, and international expansion. Show Wall Street that Amazon can be a profitable retailer.',
+      riskAppetite: -15,
+      innovation: -25,
+      financialDiscipline: 20,
+      peopleBet: -10,
+      strategicClarity: 10,
+    },
+    {
+      id: 'small-pilot',
+      title: 'SMALL PILOT \u2014 TEST AND LEARN',
+      consequence: 'Launch a limited AWS pilot with minimal investment. If it gains traction in 18 months, scale it. If not, shut it down quietly. Limit downside while testing the hypothesis.',
+      riskAppetite: 5,
+      innovation: 10,
+      financialDiscipline: 10,
+      peopleBet: 5,
+      strategicClarity: -10,
+    },
+  ],
+  historicalOutcome: {
+    whatHappened: 'Bezos went all in. AWS launched S3 in March 2006 and EC2 in August 2006. By 2015, AWS was generating $7.9 billion in revenue with 28% operating margins. By 2023, AWS was a $90 billion business generating more than 60% of Amazon total operating income. AWS became the backbone of the modern internet \u2014 running Netflix, Airbnb, NASA, and the CIA. It became the single most valuable business decision of the 21st century.',
+    correctChoice: 'launch-aws-full',
+    alternateHistories: {
+      'focus-ecommerce': 'Amazon would have become a profitable but conventional retailer. Google or Microsoft would have dominated cloud computing. Amazon stock would be worth a fraction of its actual value. Without AWS profits subsidizing e-commerce experiments, there would be no Prime Video, no Alexa, no Amazon Go.',
+      'small-pilot': 'A limited pilot would have given competitors like Google and Microsoft a 3-year head start. Cloud computing has massive network effects \u2014 the first mover with scale wins. A cautious approach would have meant AWS launched in 2009 instead of 2006, by which time Google Cloud would have captured the market.',
+    },
+  },
+};
